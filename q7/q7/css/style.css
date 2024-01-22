@@ -15,19 +15,7 @@
   position: relative;
 }
 
-.container::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  left: 30px;
-  bottom: -25px;
-  border-top: 20px solid #815a0a;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-}
-
+.container::before,
 .container::after {
   content: "";
   position: absolute;
@@ -35,8 +23,15 @@
   width: 0;
   height: 0;
   left: 30px;
-  bottom: -18px;
+  border: 20px solid transparent;
+}
+
+.container::before {
+  bottom: -45px;
+  border-top: 20px solid #815a0a;
+}
+
+.container::after {
+  bottom: -38px;
   border-top: 20px solid #fad296;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
 }
